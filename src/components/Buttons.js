@@ -124,11 +124,11 @@ const Buttons = () => {
       }
     }
   };
-
+  console.log(display.replace(/,/g, "."));
   return (
     <>
       <div className="display">
-        <p className="display-num">{display}</p>
+        <p className="display-num">{display.replaceAll(".", ",")}</p>
       </div>
 
       <div className="buttons">

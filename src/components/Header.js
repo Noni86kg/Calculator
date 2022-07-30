@@ -3,7 +3,7 @@ import "./Header.css";
 
 const Header = () => {
   const [theme, setTheme] = useState("dark-theme");
-  console.log(theme);
+
   useEffect(() => {
     document.documentElement.className = theme;
     localStorage.setItem("theme", theme);
