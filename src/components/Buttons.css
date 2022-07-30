@@ -1,0 +1,78 @@
+.display {
+  background: var(--display1bg);
+  height: 128px;
+  line-height: 128px;
+  font-size: 48px;
+  width: 100%;
+  text-align: center;
+  padding: 0 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  border-radius: 15px;
+}
+
+.display-num {
+  color: var(--text1White);
+}
+
+.buttons {
+  background: var(--toggle1bg);
+  padding: 30px;
+  width: 100%;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.buttons button:nth-last-child(1),
+.buttons button:nth-last-child(2) {
+  grid-column: span 2;
+}
+
+button {
+  height: 64px;
+  text-align: center;
+  background: var(--key1bgWhite);
+  border-radius: 15px;
+  border: none;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text1Gray);
+  box-shadow: 0px 4px 0px 0 var(--key1shadowWhite);
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  background: var(--text1WhiteHover);
+}
+.delete,
+.reset {
+  background: var(--key1bgGray);
+  color: var(--keytextDel);
+  box-shadow: 0px 4px 0px 0 var(--key1shadowGray);
+  font-size: 20px;
+}
+.delete:hover,
+.reset:hover {
+  background: var(--key1bgGrayHover);
+}
+.equal {
+  background: var(--red1toggleBg);
+  color: var(--text1White);
+  box-shadow: 0px 4px 0px 0 var(--red1toggleShadow);
+  font-size: 20px;
+}
+.equal:hover {
+  background: var(--red1toggleBgHover);
+}
+
+@media (max-width: 767px) {
+  .buttons {
+    grid-gap: 10px;
+    padding: 15px;
+  }
+}

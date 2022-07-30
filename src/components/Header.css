@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-changer-div {
+  display: flex;
+  align-items: center;
+}
+
+.theme-changer {
+  height: 26px;
+  width: 71px;
+  border-radius: 13px;
+  background: var(--toggle1bg);
+  margin-left: 20px;
+  display: flex;
+  align-items: end;
+  padding: 5px 3px;
+}
+
+.theme-changer-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 0 3px;
+}
+
+.theme-changer-circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: var(--red1toggleBg);
+}

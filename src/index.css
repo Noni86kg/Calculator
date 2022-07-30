@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --them1bg: rgb(58, 71, 100);
+  --toggle1bg: rgb(35, 44, 67);
+  --display1bg: rgb(24, 32, 52);
+  --key1bgGray: rgb(99, 112, 151);
+  --key1bgGrayHover: rgb(162, 178, 225);
+  --keytextDel: rgb(255, 255, 255);
+  --key1shadowGray: rgb(64, 78, 114);
+  --red1toggleBg: rgb(208, 63, 47);
+  --red1toggleBgHover: rgb(249, 107, 91);
+  --red1toggleShadow: rgb(147, 38, 26);
+  --key1bgWhite: rgb(234, 227, 220);
+  --key1shadowWhite: rgb(180, 165, 151);
+  --text1Gray: rgb(68, 75, 90);
+  --text1White: rgb(255, 255, 255);
+  --text1WhiteHover: rgb(255, 255, 255);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-theme {
+  --them1bg: rgb(58, 71, 100);
+  --toggle1bg: rgb(35, 44, 67);
+  --display1bg: rgb(24, 32, 52);
+  --key1bgGray: rgb(99, 112, 151);
+  --key1bgGrayHover: rgb(162, 178, 225);
+  --keytextDel: rgb(255, 255, 255);
+  --key1shadowGray: rgb(64, 78, 114);
+  --red1toggleBg: rgb(208, 63, 47);
+  --red1toggleBgHover: rgb(249, 107, 91);
+  --red1toggleShadow: rgb(147, 38, 26);
+  --key1bgWhite: rgb(234, 227, 220);
+  --key1shadowWhite: rgb(180, 165, 151);
+  --text1Gray: rgb(68, 75, 90);
+  --text1White: rgb(255, 255, 255);
+  --text1WhiteHover: rgb(255, 255, 255);
+}
+.light-theme {
+  --them1bg: #e6e6e6;
+  --toggle1bg: #d2cdcd;
+  --display1bg: #eeeeee;
+  --key1bgGray: #378187;
+  --key1bgGrayHover: #62b5bc;
+  --keytextDel: rgb(255, 255, 255);
+  --key1shadowGray: #1b6066;
+  --red1toggleBg: #c85402;
+  --red1toggleBgHover: #ff8a38;
+  --red1toggleShadow: #873901;
+  --key1bgWhite: #e5e4e1;
+  --key1shadowWhite: #a79e91;
+  --text1Gray: #36362c;
+  --text1White: #35352c;
+  --text1WhiteHover: rgb(255, 255, 255);
+}
+.purple-theme {
+  --them1bg: #17062a;
+  --toggle1bg: #1e0936;
+  --display1bg: #1e0936;
+  --key1bgGray: #56077c;
+  --key1bgGrayHover: #8631af;
+  --keytextDel: rgb(255, 255, 255);
+  --key1shadowGray: #be15f4;
+  --red1toggleBg: #00ded0;
+  --red1toggleBgHover: #93fff8;
+  --red1toggleShadow: #6cf9f0;
+  --key1bgWhite: #331c4d;
+  --key1shadowWhite: #881c9e;
+  --text1Gray: #ffe53d;
+  --text1White: #ffe53d;
+  --text1WhiteHover: #6c34ac;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  background: var(--them1bg);
+  color: var(--text1White);
+}
+.calculator {
+  width: 90%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
